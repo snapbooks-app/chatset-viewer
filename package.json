@@ -1,0 +1,51 @@
+{
+  "name": "chatset-viewer",
+  "version": "1.0.0",
+  "description": "A viewer for chatset files",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snapbooks-app/chatset-viewer.git"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snapbooks-app/chatset-viewer/issues"
+  },
+  "homepage": "https://github.com/snapbooks-app/chatset-viewer#readme",
+  "devDependencies": {
+    "electron": "^32.0.1",
+    "electron-builder": "^22.11.7",
+    "tailwindcss": "^3.3.0",
+    "daisyui": "^3.0.0"
+  },
+  "dependencies": {
+    "marked": "^5.0.2"
+  },
+  "build": {
+    "appId": "com.snapbooks.chatsetviewer",
+    "productName": "Chatset Viewer",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ]
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage"
+      ],
+      "category": "Utility"
+    }
+  }
+}
