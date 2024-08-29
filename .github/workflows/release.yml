@@ -23,12 +23,7 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: |
-        if [ "${{ matrix.os }}" == "macos-latest" ]; then
-          npm install
-        else
-          npm install --no-optional
-        fi
+      run: npm install
 
     - name: Build/release Electron app
       uses: samuelmeuli/action-electron-builder@v1
