@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder --linux --mac --win",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm version patch && git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
     "electron": "^32.0.1",
     "electron-builder": "^22.11.7",
     "tailwindcss": "^3.3.0",
-    "daisyui": "^3.0.0",
+    "daisyui": "^3.0.0"
+  },
+  "optionalDependencies": {
     "dmg-license": "^1.0.11"
   },
   "dependencies": {
