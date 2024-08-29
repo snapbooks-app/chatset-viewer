@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "build": "electron-builder --linux --mac --win",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,10 @@
     "url": "git+https://github.com/snapbooks-app/chatset-viewer.git"
   },
   "keywords": [],
-  "author": "Your Name",
+  "author": {
+    "name": "Snapbooks",
+    "email": "hi@snapbooks.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/snapbooks-app/chatset-viewer/issues"
